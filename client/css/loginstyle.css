@@ -1,7 +1,7 @@
 
-.tabsdemoDynamicHeight{
+/*.tabsdemoDynamicHeight{
 	padding-top: 220px;
-}
+}*/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -10,6 +10,7 @@ body {
     color: #888;
     line-height: 30px;
     text-align: center;
+
 }
 
 strong { font-weight: 500; }
@@ -83,6 +84,25 @@ img { max-width: 100%; }
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
 
 
+.btn {
+  padding: 0 6px 0 6px;
+  margin: 6px 8px 6px 8px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #4B0082;
+  font-family: 'Roboto', serif;
+  font-weight: bold;
+  margin-left: 0px;
+  height: 36px;
+}
+
 /***** Top content *****/
 
 .inner-bg {
@@ -152,7 +172,33 @@ img { max-width: 100%; }
 	border-right: 1px solid #ddd;
 }
 
+#login {
+	text-align: left;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+#login label {
+	margin-left: 40px;
+}
+
+#login h1 {
+	margin-left: 60px;
+	margin-top: 0px;
+}
+#login input {
+	float: right;
+}
+
+#login .btn{
+	float: right;
+	margin-left: 20px;
+}
+
+.md-display-2 {
+	margin-bottom: 5px;
+}
 /***** Footer *****/
 
 footer {

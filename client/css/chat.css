@@ -5,26 +5,34 @@ h1 {
 ul {
 	list-style-type: none;
 	margin-left: -5px;
+	margin-bottom: 3px;
+	background-color: white;
+	width: 100px; 
+	height: 40%; 
+	border: solid 1px black;
+	border-radius: 3px;
+	margin-top: 0px;
 }
 
 .container {
 	padding-left: 12%;
-	margin-top: 100px;
+
 }
 
-#message_div{
-	width: 70%;
-	height: 585px;
+#user_list {
+	margin-top: 0px;
 }
 
 #message_div, #user_list{
 	vertical-align: top;
 	display: inline-block;
+	border-radius: 3px;
 }
 
 .textsomething{
-	width: 100%;
+	width: 102%;
 	overflow-y: hidden;
+	border-radius: 3px;
 }
 
 .message_bar{
@@ -33,7 +41,46 @@ ul {
 }
 
 #message_div{
-	height: 457px;
+	width: 70%;
+	height: 585px;
+	padding-left: 10px;
+	border-radius: 3px;
 	overflow-y: scroll;
 	border: 1px solid black;
+}
+
+#message_div p {
+	font-weight: bold;
+	font-size: large;
+	font-family: arial;
+}
+
+.btn {
+  padding: 0 6px 0 6px;
+  margin: 6px 8px 6px 8px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #4B0082;
+  font-family: 'Roboto', serif;
+}
+
+.bold {
+	font-weight: bold;
+	margin-left: 0px;
+	height: 36px;
+}
+
+.md-button:not([disabled]):hover {
+  background-color: #4B0082;
+}
+
+h4 {
+	padding-top: 0px;
 }

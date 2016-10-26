@@ -1,15 +1,15 @@
 <link rel="stylesheet" href="../css/chat.css">
 <div class="container">
     
-    <h1>Hello {{ currentUser }}</h1>
-    <h1>{{ room }}</h1>
+    <h1>Hello, {{ currentUser }}!</h1>
+    <h1>You are in: {{ room }}</h1>
     <div layout="row">
       <md-sidenav md-component-id="left" class="md-sidenav-left">
           <md-input-container>
             <form ng-submit="selectChatRoom()">
                 <label for="testInput">Create a New Room</label>
                 <input id="testInput" type="text" ng-model="newChat.room" md-autofocus>
-                <button type="submit" md-button>Submit</button>
+                <button type="submit" class="btn" md-button>Submit</button>
             </form>
                 
                 <div id="chatroom_display" ng-hide="hideRoom">
@@ -18,21 +18,21 @@
                 <div id="other_rooms">
                     <form ng-submit="pickRoom()">
                         <select ng-model="chooseRoom.room" ng-options="openRoom for openRoom in openRooms"></select>
-                        <button type="submit" md-button>Select Room</button>
+                        <button type="submit" class="btn" md-button>Select Room</button>
                     </form>
                 </div>
-                <button type="submit" ng-click="leaveRoom()" md-button>Leave</button>
-                <button type="submit" ng-click="logout()" md-button>Logout</button>
+                <button type="submit" ng-click="leaveRoom()" class="btn2" md-button>Leave</button>
+                <button type="submit" ng-click="logout()" class="btn2" md-button>Logout</button>
           </md-input-container>
       </md-sidenav>
-        <md-button ng-click="openLeftMenu()">
+        <button class="btn bold" ng-click="openLeftMenu()">
           Menu
-        </md-button>
+        </button>
     </div>
 
     <div id="user_list">
         <div class="userList">
-            <ul style="width:100px; height:38.9%; background-color:lightgrey">
+            <ul>
                <li ng-repeat="user in users">{{ user }}</li>
             </ul>
         </div>
@@ -50,7 +50,7 @@
         <div class="message_bar">
             <form ng-submit="send()">
                 <textarea class="textsomething" ng-model="text" placeholder="Write something {{ currentUser.name }}" autofocus=true></textarea> <br/>
-                <input type="submit" id="round_button" value="Send" ng-disabled="!text">
+                <button type="submit" class="btn bold" id="round_button" value="Send" ng-disabled="!text">Send</button>
             </form>
         </div>
 </div>

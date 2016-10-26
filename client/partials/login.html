@@ -14,18 +14,18 @@
           
             <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Email Address<span class="req">:</span>
             </label>
             <input type="email" ng-model="getUser.email" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
             <label>
-              Password<span class="req">*</span>
+              Password<span class="req">:</span>
             </label>
             <input type="password" ng-model="getUser.password" required autocomplete="off"/>
           </div>
-          <button>Login</button>
+          <button class="btn">Login</button>
           </form>
 
         </div>
@@ -35,27 +35,27 @@
         <md-tab label="Register">
         <md-content class="md-padding">
             <h1 class="md-display-2">Register</h1>
-            <div id="signup">
+            <div id="login">
           <form ng-submit="addUser(newUser)">
           
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                Name<span class="req">*</span>
+                Name<span class="req">:</span>
               </label>
               <input type="text" ng-model="newUser.name" required autocomplete="off" />
             </div>
         
           <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Email Address<span class="req">:</span>
             </label>
             <input type="email" ng-model="newUser.email" required autocomplete="off"/>
           </div>
 
             <div class="field-wrap">
               <label>
-                Password<span class="req">*</span>
+                Password<span class="req">:</span>
               </label>
               <input type="password" ng-model="newUser.password" required autocomplete="off"/>
             </div>
@@ -64,12 +64,11 @@
           
           <div class="field-wrap">
             <label>
-              Confirm Password<span class="req">*</span>
+              Confirm Password<span class="req">:</span>
             </label>
             <input type="password" ng-model="newUser.confirmPassword" required autocomplete="off"/>
           </div>
-          
-          <button type="submit" class="button button-block"/>Register</button>
+          <button class="btn" type="submit" class="button button-block"/>Register</button>
           
           </form>
 
