@@ -172,33 +172,58 @@ img { max-width: 100%; }
 	border-right: 1px solid #ddd;
 }
 
-#login {
+.login {
 	text-align: left;
 	width: 350px;
-	margin-left: auto;
+	margin-left: 410px;
+	margin-top: 80px;
 	margin-right: auto;
+	height: 200px;
 }
 
-#login label {
+.login label {
 	margin-left: 40px;
 }
 
-#login h1 {
-	margin-left: 60px;
+.chat-heading {	
 	margin-top: 0px;
+	font-family: 'Bungee Shade';
+	font-size: 64px;
+	font-weight: none;
 }
-#login input {
+.login input {
 	float: right;
 }
 
-#login .btn{
+.login .btn{
 	float: right;
 	margin-left: 20px;
+}
+
+.register {
+	margin-top: 55px;
 }
 
 .md-display-2 {
 	margin-bottom: 5px;
 }
+
+md-content.md-padding {
+	height: 640px;
+	background: url('https://images.unsplash.com/photo-1479243996248-93e2c6f55f77') no-repeat fixed center; 
+	background-size: cover;
+	background-position: 20%; 
+}
+
+md-tabs-canvas.md-center-tabs {
+	background-color: #4B0082!important;
+}
+
+md-tabs-canvas.md-center-tabs span {
+	color: white !important;
+}
+
+
 /***** Footer *****/
 
 footer {
